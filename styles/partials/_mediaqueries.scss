@@ -1,0 +1,12 @@
+@media screen and (min-width:720px) {    
+    .menu_item.active a,
+    .menu_item a:hover {
+        text-decoration: none;
+        color: #05020199;
+        font-weight: 500;
+    }
+    .boton:hover {
+        background-color: #bf6b16;
+        cursor: pointer;
+    }
+}
