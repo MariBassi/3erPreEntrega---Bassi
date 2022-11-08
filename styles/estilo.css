@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Raleway:wght@100;200;300;400;500;600&family=Teko:wght@300;400;500&display=swap");
-.eventos__titulo h2 {
+.quienes__somos h2, .servicios h2, .eventos__titulo h2 {
   display: block;
   background-color: #ba7d40;
   height: 60px;
@@ -198,6 +198,239 @@ header .menu .lista .active a {
   transition-timing-function: ease-in-out;
 }
 
+.main__menu {
+  width: 100%;
+  height: auto;
+  background-image: url(../Imagenes/el\ nacional__menu.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+.main__menu .contenedor {
+  width: 70vw;
+  height: auto;
+  background-color: rgb(251, 246, 236);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.main__menu .contenedor .titulo__paraje {
+  text-align: center;
+}
+.main__menu .contenedor .titulo__paraje h2 {
+  font-family: "Teko", sans-serif;
+  font-weight: 300;
+  font-size: 100px;
+  padding-top: 50px;
+  text-transform: uppercase;
+}
+.main__menu .contenedor .titulo__paraje h3 {
+  font-family: "Teko", sans-serif;
+  font-weight: 400;
+  font-size: 150px;
+  color: #F98A0C;
+  text-shadow: 5px 5px 10px #865e35;
+}
+.main__menu .contenedor .separador {
+  background-color: #F98A0C;
+  padding: 2%;
+  width: 40vw;
+  height: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__menu .contenedor .separador h4 {
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 2vw;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+.main__menu .contenedor .menuparaje {
+  display: flex;
+  color: #bf6b16;
+  width: 40vw;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.main__menu .contenedor .menuparaje .listado,
+.main__menu .contenedor .menuparaje .listado__precio {
+  padding-block: 30px;
+  text-transform: uppercase;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.main__menu .contenedor .menuparaje .listado ul,
+.main__menu .contenedor .menuparaje .listado__precio ul {
+  list-style-type: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.main__menu .contenedor .menuparaje .listado ul li,
+.main__menu .contenedor .menuparaje .listado__precio ul li {
+  padding-block: 1rem;
+}
+.main__menu .contenedor .menuparaje .listado__precio {
+  justify-content: flex-end;
+}
+
+.servicios {
+  height: 80px;
+}
+.seccion__servicios {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  width: 100%;
+  flex-direction: column;
+}
+.seccion__servicios .primeros, .seccion__servicios .segundos {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: space-evenly;
+}
+.seccion__servicios .primeros .servicio, .seccion__servicios .segundos .servicio {
+  width: 25vw;
+  height: 90vh;
+  background-color: #bf6b16;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition: all 1s;
+}
+.seccion__servicios .primeros .servicio:hover, .seccion__servicios .segundos .servicio:hover {
+  transform: scale(1.1) translateY(-20px);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.seccion__servicios .primeros .servicio img, .seccion__servicios .segundos .servicio img {
+  width: 100%;
+}
+.seccion__servicios .primeros .servicio .info, .seccion__servicios .segundos .servicio .info {
+  padding: 10px 20px 20px 20px;
+  line-height: 0.95cm;
+  color: #000000;
+}
+.seccion__servicios .primeros .servicio .info h4, .seccion__servicios .segundos .servicio .info h4 {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.seccion__servicios .primeros .servicio .info a, .seccion__servicios .segundos .servicio .info a {
+  color: #000000;
+  background-color: #ba7d40;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+.seccion__servicios .primeros .servicio .info a:hover, .seccion__servicios .segundos .servicio .info a:hover {
+  background-color: #885b2f;
+}
+
+.quienes__somos {
+  height: 80px;
+}
+.main__quienessomos {
+  width: 100%;
+  height: auto;
+}
+.main__quienessomos .seccion__quienessomos {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+.main__quienessomos .seccion__quienessomos .div__izq1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-inline: 3rem;
+  -webkit-animation: fade-in-fwd 3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-fwd 3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.main__quienessomos .seccion__quienessomos .div__izq1 h3 {
+  font-size: 1.4vw;
+  color: #ba7d40;
+  padding-bottom: 20px;
+}
+.main__quienessomos .seccion__quienessomos .div__izq1 p {
+  font-size: 1.2vw;
+  line-height: 5vh;
+}
+.main__quienessomos .seccion__quienessomos .div__der1 {
+  flex: 1;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  padding-inline: 4rem;
+}
+.main__quienessomos .seccion__quienessomos .div__der1 .nh__imagen {
+  height: 60vh;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.main__quienessomos .seccion__nuestrahistoria {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  margin-bottom: 5vh;
+}
+.main__quienessomos .seccion__nuestrahistoria .div__izq2 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.main__quienessomos .seccion__nuestrahistoria .div__izq2 .qs__imagen {
+  height: 80vh;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.main__quienessomos .seccion__nuestrahistoria .div__der2 {
+  flex: 1;
+  padding-inline: 2rem;
+}
+.main__quienessomos .seccion__nuestrahistoria .div__der2 h3 {
+  color: #ba7d40;
+  font-size: 1.4vw;
+  padding-bottom: 20px;
+}
+.main__quienessomos .seccion__nuestrahistoria .div__der2 p {
+  line-height: 1cm;
+  font-size: 1.2vw;
+}
+
+footer {
+  width: 100%;
+  height: 80px;
+  background-color: #ba7d40;
+  text-align: center;
+  padding: 10px;
+}
+footer p {
+  color: #ffffff;
+  font-size: 20px;
+}
+footer .redes {
+  font-size: 30px;
+  letter-spacing: 10px;
+}
+footer .redes a {
+  color: #ffffff;
+}
+
 @keyframes appear {
   0% {
     opacity: 0;
@@ -217,6 +450,26 @@ header .menu .lista .active a {
     opacity: 0;
   }
   100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in-fwd {
+  0% {
+    transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-fwd {
+  0% {
+    transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
     opacity: 1;
   }
 }

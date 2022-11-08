@@ -1,0 +1,65 @@
+.servicios {
+    height: 80px;
+
+    h2 {
+        @extend %tituloSeparador;
+    }
+}
+
+.seccion__servicios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    width: 100%;
+    flex-direction: column;
+
+    .primeros, .segundos {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        justify-content: space-evenly;
+        
+        .servicio {
+            width: 25vw;
+            height: 90vh;
+            background-color: #bf6b16;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            transition: all 1s;
+
+            &:hover {
+                transform: scale(1.1) translateY(-20px);
+                box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            }
+
+            img {
+                width: 100%;   
+            }  
+
+            .info {
+                padding: 10px 20px 20px 20px;
+                line-height: .95cm;
+                color: #000000;  
+
+                h4 {
+                    color: #ffffff;
+                    text-transform: uppercase;
+                }              
+
+                a {
+                    color: #000000;
+                    background-color: #ba7d40;
+                    text-decoration: none;
+                    padding: 10px;
+                    border-radius: 5px;
+
+                    &:hover {
+                        background-color: #885b2f;
+                    }
+                }
+            }
+        }
+    }
+}

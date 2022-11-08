@@ -1,0 +1,92 @@
+.quienes__somos {
+    height: 80px;
+
+    h2 {
+        @extend %tituloSeparador;
+    }
+}
+
+.main__quienessomos {
+    width: 100%;
+    height: auto;
+
+    .seccion__quienessomos {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+        padding-bottom: 50px;
+
+        .div__izq1 {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding-top: 2rem;
+            padding-inline: 3rem;
+            -webkit-animation: fade-in-fwd 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: fade-in-fwd 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
+            h3 {
+                font-size: 1.4vw;
+                color: #ba7d40;
+                padding-bottom: 20px;
+            }
+
+            p {
+                font-size: 1.2vw;
+                line-height: 5vh;
+            }
+        }
+
+        .div__der1 {
+            flex: 1;
+            padding-top: 2rem;
+            display: flex;
+            justify-content: center;
+            padding-inline: 4rem;
+
+            .nh__imagen {
+                height: 60vh;
+                border-radius: 20px;
+                box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+            }
+        }
+    }
+
+    .seccion__nuestrahistoria {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        margin-bottom: 5vh;
+    
+        .div__izq2 {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+    
+            .qs__imagen {
+                height: 80vh;
+                border-radius: 10px;
+                box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+            }
+        }
+    
+        .div__der2 {
+            flex: 1;
+            padding-inline: 2rem;
+    
+            h3 {
+                color: #ba7d40;
+                font-size: 1.4vw;
+                padding-bottom: 20px;
+            }
+    
+            p {
+                line-height: 1cm;
+                font-size: 1.2vw;
+            }
+        }
+    }    
+}
+
