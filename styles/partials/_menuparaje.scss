@@ -21,7 +21,7 @@
             text-align: center;
 
             h2 {
-                font-family: 'Teko', sans-serif;
+                font-family: $fontTeko;
                 font-weight: 300;
                 font-size: 100px;
                 padding-top: 50px;
@@ -29,16 +29,16 @@
             }
 
             h3 {
-                font-family: 'Teko', sans-serif;
+                font-family: $fontTeko;
                 font-weight: 400;
                 font-size: 150px;
-                color: #F98A0C;
+                color: $terColor;
                 text-shadow: 5px 5px 10px #865e35;
             }
         }
 
         .separador {
-            background-color: #F98A0C;
+            background-color: $terColor;
             padding: 2%;
             width: 40vw;
             height: 3vh;
@@ -48,7 +48,7 @@
 
             h4 {
                 color: white;
-                font-family: 'Quicksand', sans-serif;
+                font-family: $fontQuick;
                 font-weight: 700;
                 font-size: 2vw;
                 text-transform: uppercase;
@@ -58,7 +58,7 @@
 
         .menuparaje {
             display: flex;
-            color: #bf6b16;
+            color: $mainColor;
             width: 40vw;
             height: 100%;
             justify-content: center;
@@ -92,7 +92,6 @@
         }
         
     }
-
 }
 
 

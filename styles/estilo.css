@@ -159,6 +159,9 @@ header .menu .lista .active a {
   padding: 10px;
   margin-top: 5px;
 }
+.eventos .evento a:hover {
+  background-color: #bf6b16;
+}
 
 .seccion__historia {
   height: 100vh;
@@ -483,5 +486,179 @@ footer .redes a {
   .boton:hover {
     background-color: #bf6b16;
     cursor: pointer;
+  }
+}
+@media screen and (max-width: 480px) {
+  /*index*/
+  .btn__label {
+    display: block;
+  }
+  header #btn__menu:checked ~ .menu {
+    margin-right: 0;
+  }
+  header #btn__menu:checked ~ .menu #btn__menu:not(:checked) ~ .menu {
+    display: none;
+  }
+  header .menu {
+    background-color: #ba7d40;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    width: 50vw;
+    margin-right: -70%;
+    transition: all 0.75s;
+    justify-content: center;
+    z-index: 1;
+  }
+  header .menu .lista {
+    flex-direction: column;
+  }
+  header .menu .lista .menu_item a {
+    color: #ffffff;
+  }
+  main {
+    flex-direction: column;
+  }
+  main .principal {
+    height: 60vh;
+  }
+  .eventos {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .eventos .evento {
+    padding-bottom: 30px;
+  }
+  .eventos .evento p {
+    padding-inline: 60px;
+  }
+  .seccion__historia .historia {
+    flex-direction: column;
+    padding-top: 15px;
+  }
+  .seccion__historia .historia .historia__izquierdo {
+    max-width: 80vw;
+  }
+  .seccion__historia .historia .historia__izquierdo h4,
+.seccion__historia .historia .historia__izquierdo p {
+    font-size: 15px;
+    line-height: 30px;
+    padding-top: 10px;
+  }
+  .seccion__historia .historia .historia__derecho img {
+    width: 100%;
+  }
+  /*nuestros-platos*/
+  .main__menu {
+    background-image: none;
+  }
+  .main__menu .contenedor {
+    width: 100vw;
+  }
+  .main__menu .contenedor .titulo__paraje h2 {
+    font-size: 60px;
+    padding-top: 0;
+  }
+  .main__menu .contenedor .titulo__paraje h3 {
+    font-size: 30vw;
+  }
+  .main__menu .contenedor .separador {
+    padding: 2%;
+    height: 5vh;
+    width: 100vw;
+  }
+  .main__menu .contenedor .separador h4 {
+    font-size: 4vw;
+  }
+  .main__menu .contenedor .menuparaje {
+    width: 90vw;
+  }
+  .main__menu .contenedor .menuparaje .listado {
+    width: 70%;
+  }
+  .main__menu .contenedor .menuparaje .listado__precio {
+    width: 30%;
+  }
+  /*servicios*/
+  .seccion__servicios {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .seccion__servicios .primeros,
+.seccion__servicios .segundos {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    height: 280vh;
+  }
+  .seccion__servicios .primeros .servicio,
+.seccion__servicios .segundos .servicio {
+    width: 80vw;
+  }
+  /*quienes-somos*/
+  .main__quienessomos {
+    flex-direction: column;
+  }
+  .main__quienessomos .seccion__quienessomos {
+    flex-direction: column;
+    height: 160vh;
+    padding-bottom: 50px;
+  }
+  .main__quienessomos .seccion__quienessomos .div__izq1 {
+    width: 90%;
+    height: 100vh;
+  }
+  .main__quienessomos .seccion__quienessomos .div__izq1 h3 {
+    font-size: 20px;
+  }
+  .main__quienessomos .seccion__quienessomos .div__izq1 p {
+    font-size: 18px;
+  }
+  .main__quienessomos .seccion__quienessomos .div__der1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-inline: 0;
+  }
+  .main__quienessomos .seccion__quienessomos .div__der1 .nh__imagen {
+    width: 100%;
+  }
+  .main__quienessomos .seccion__nuestrahistoria {
+    flex-direction: column;
+    height: 220vh;
+    margin-top: 5vh;
+  }
+  .main__quienessomos .seccion__nuestrahistoria .div__izq2 {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 50vh;
+    padding-top: 40px;
+  }
+  .main__quienessomos .seccion__nuestrahistoria .div__izq2 .qs__imagen {
+    width: 100%;
+  }
+  .main__quienessomos .seccion__nuestrahistoria .div__der2 {
+    order: -1;
+    height: 140vh;
+  }
+  .main__quienessomos .seccion__nuestrahistoria .div__der2 h3 {
+    font-size: 20px;
+  }
+  .main__quienessomos .seccion__nuestrahistoria .div__der2 p {
+    font-size: 18px;
+  }
+  /*formulario*/
+  .main__formulario {
+    height: auto;
+  }
+  .main__formulario .formulario .form__contacto {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__formulario .datos__paraje {
+    width: 100%;
   }
 }/*# sourceMappingURL=estilo.css.map */

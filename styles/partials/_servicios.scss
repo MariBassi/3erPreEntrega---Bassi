@@ -23,7 +23,7 @@
         .servicio {
             width: 25vw;
             height: 90vh;
-            background-color: #bf6b16;
+            background-color: $mainColor;
             border-radius: 10px;
             overflow: hidden;
             box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -50,7 +50,7 @@
 
                 a {
                     color: #000000;
-                    background-color: #ba7d40;
+                    background-color: $secondaryColor;
                     text-decoration: none;
                     padding: 10px;
                     border-radius: 5px;

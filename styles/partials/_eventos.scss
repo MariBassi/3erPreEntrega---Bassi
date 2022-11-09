@@ -39,9 +39,13 @@
             border: none;
             color: #000000;
             text-decoration: none;
-            background-color: #ba7d40;
+            background-color: $secondaryColor;
             padding: 10px;
             margin-top: 5px;
+            
+            &:hover {
+                background-color: $mainColor;
+            }
         }
     }
 }
