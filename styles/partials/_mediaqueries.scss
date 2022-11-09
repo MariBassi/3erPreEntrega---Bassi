@@ -21,11 +21,12 @@
     header {
         #btn__menu:checked~.menu {
             margin-right: 0;
-
-            #btn__menu:not(:checked)~.menu {
-                display: none;
-            }
         }
+
+        #btn__menu:not(:checked)~.menu {
+            display: none;
+        }
+
         .menu {
             background-color: $secondaryColor;
             position: absolute;
@@ -222,7 +223,7 @@
     /*formulario*/
 
     .main__formulario {
-        height: auto;
+        height: 160vh;
 
         .formulario {
 

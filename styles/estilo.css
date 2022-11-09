@@ -496,7 +496,7 @@ footer .redes a {
   header #btn__menu:checked ~ .menu {
     margin-right: 0;
   }
-  header #btn__menu:checked ~ .menu #btn__menu:not(:checked) ~ .menu {
+  header #btn__menu:not(:checked) ~ .menu {
     display: none;
   }
   header .menu {
@@ -652,7 +652,7 @@ footer .redes a {
   }
   /*formulario*/
   .main__formulario {
-    height: auto;
+    height: 160vh;
   }
   .main__formulario .formulario .form__contacto {
     display: flex;
