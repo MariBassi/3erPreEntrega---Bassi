@@ -113,6 +113,7 @@ header .menu .lista .active a {
   color: #bf6b16;
   text-align: center;
   font-size: 20px;
+  font-weight: 600;
   padding-inline: 20%;
   padding-top: 30px;
   -webkit-animation: appear;
@@ -147,7 +148,7 @@ header .menu .lista .active a {
 .eventos .evento p {
   text-align: center;
   padding-top: 20px;
-  padding-inline: 30px;
+  padding-inline: 50px;
   line-height: 20px;
   padding-bottom: 5px;
 }
@@ -718,7 +719,7 @@ footer .redes a {
     padding-top: 40px;
   }
   .main__quienessomos .seccion__nuestrahistoria .div__izq2 .qs__imagen {
-    width: 100%;
+    width: 90%;
   }
   .main__quienessomos .seccion__nuestrahistoria .div__der2 {
     order: -1;
