@@ -1,5 +1,6 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Raleway:wght@100;200;300;400;500;600&family=Teko:wght@300;400;500&display=swap");
-.quienes__somos h2, .servicios h2, .eventos__titulo h2 {
+.titulo__contacto, .quienes__somos h2, .servicios h2, .eventos__titulo h2 {
   display: block;
   background-color: #ba7d40;
   height: 60px;
@@ -413,6 +414,85 @@ header .menu .lista .active a {
 .main__quienessomos .seccion__nuestrahistoria .div__der2 p {
   line-height: 1cm;
   font-size: 1.2vw;
+}
+
+.main__formulario {
+  display: flex;
+  height: 100vh;
+}
+.main__formulario .formulario {
+  width: 50%;
+  height: 100%;
+  flex: 1;
+  margin-block: 35px;
+  margin-inline: 30px;
+}
+.main__formulario .formulario .form__contacto {
+  display: grid;
+  color: #bf6b16;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "namesurname  email" "teléfono     motivo" "mensaje      mensaje" "mensaje      mensaje";
+  width: 100%;
+  gap: 1rem;
+}
+.main__formulario .formulario .form__contacto .namesurname {
+  grid-area: namesurname;
+}
+.main__formulario .formulario .form__contacto .email {
+  grid-area: email;
+}
+.main__formulario .formulario .form__contacto .teléfono {
+  grid-area: teléfono;
+}
+.main__formulario .formulario .form__contacto .motivo {
+  grid-area: motivo;
+}
+.main__formulario .formulario .form__contacto .mensaje {
+  grid-area: mensaje;
+}
+.main__formulario .formulario .form__contacto input {
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  padding: 1rem 1.5rem;
+}
+.main__formulario .formulario .form__contacto input::-moz-placeholder {
+  color: #bf6b16;
+}
+.main__formulario .formulario .form__contacto input:-ms-input-placeholder {
+  color: #bf6b16;
+}
+.main__formulario .formulario .form__contacto input::placeholder {
+  color: #bf6b16;
+}
+.main__formulario .formulario .form__contacto .button,
+.main__formulario .formulario .form__contacto .reset {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #ba7d40;
+  border: 0;
+  width: 160px;
+}
+.main__formulario .formulario .form__contacto .button:hover,
+.main__formulario .formulario .form__contacto .reset:hover {
+  background-color: #bf6b16;
+}
+.main__formulario .datos__paraje {
+  height: 100%;
+  width: 50%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.main__formulario .datos__paraje h3,
+.main__formulario .datos__paraje h4 {
+  margin-bottom: 20px;
+}
+.main__formulario .datos__paraje h3 {
+  color: #ba7d40;
+  font-size: 1.5rem;
 }
 
 footer {

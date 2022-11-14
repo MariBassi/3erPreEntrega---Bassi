@@ -1,0 +1,93 @@
+.titulo__contacto {
+    @extend %tituloSeparador;
+}
+
+.main__formulario {
+    display: flex;
+    height: 100vh;
+
+    .formulario {
+        width: 50%;
+        height: 100%;
+        flex: 1;
+        margin-block: 35px;
+        margin-inline: 30px;
+
+        .form__contacto {
+            display: grid;
+            color: #bf6b16;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-areas:
+                "namesurname  email"
+                "teléfono     motivo"
+                "mensaje      mensaje"
+                "mensaje      mensaje";
+            width: 100%;
+            gap: 1rem;
+
+            .namesurname {
+                grid-area: namesurname;
+            }
+
+            .email {
+                grid-area: email;
+            }
+
+            .teléfono {
+                grid-area: teléfono;
+            }
+
+            .motivo {
+                grid-area: motivo;
+            }
+
+            .mensaje {
+                grid-area: mensaje;
+            }
+
+            input {
+                color: #000000;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 300;
+                padding: 1rem 1.5rem;
+
+                &::placeholder {
+                    color: #bf6b16;
+                }
+            }
+
+            .button,
+            .reset {
+                border-radius: 10px;
+                padding: 10px;
+                background-color: #ba7d40;
+                border: 0;
+                width: 160px;
+
+                &:hover {
+                    background-color: #bf6b16;
+                }
+            }
+        }
+    }
+
+    .datos__paraje {
+        height: 100%;
+        width: 50%;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        h3,
+        h4 {
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: #ba7d40;
+            font-size: 1.5rem;
+        }
+    }
+}
