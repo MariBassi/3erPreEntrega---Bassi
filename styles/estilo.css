@@ -86,7 +86,7 @@ header .menu .lista .active a {
 
 .principal {
   width: 100%;
-  background-image: url(../Imagenes/background3.jpg);
+  background-image: url(../../Imagenes/background3.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -206,7 +206,7 @@ header .menu .lista .active a {
 .main__menu {
   width: 100%;
   height: auto;
-  background-image: url(../Imagenes/el\ nacional__menu.png);
+  background-image: url(../../Imagenes/el\ nacional__menu.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
