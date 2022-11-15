@@ -86,7 +86,7 @@ header .menu .lista .active a {
 
 .principal {
   width: 100%;
-  background-image: url(../../Imagenes/background3.jpg);
+  background-image: url(../Imagenes/background3.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -206,7 +206,7 @@ header .menu .lista .active a {
 .main__menu {
   width: 100%;
   height: auto;
-  background-image: url(../../Imagenes/el\ nacional__menu.png);
+  background-image: url(../Imagenes/el\ nacional__menu.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -689,7 +689,7 @@ footer .redes a {
   }
   .main__quienessomos .seccion__quienessomos .div__izq1 {
     width: 90%;
-    height: 100vh;
+    height: auto;
   }
   .main__quienessomos .seccion__quienessomos .div__izq1 h3 {
     font-size: 20px;
@@ -709,7 +709,7 @@ footer .redes a {
   .main__quienessomos .seccion__nuestrahistoria {
     flex-direction: column;
     height: 220vh;
-    margin-top: 5vh;
+    margin-top: 8vh;
   }
   .main__quienessomos .seccion__nuestrahistoria .div__izq2 {
     display: flex;
@@ -719,7 +719,8 @@ footer .redes a {
     padding-top: 40px;
   }
   .main__quienessomos .seccion__nuestrahistoria .div__izq2 .qs__imagen {
-    width: 90%;
+    width: auto;
+    height: 80vh;
   }
   .main__quienessomos .seccion__nuestrahistoria .div__der2 {
     order: -1;
@@ -733,7 +734,7 @@ footer .redes a {
   }
   /*formulario*/
   .main__formulario {
-    height: 160vh;
+    height: auto;
   }
   .main__formulario .formulario .form__contacto {
     display: flex;

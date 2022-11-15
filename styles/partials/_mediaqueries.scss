@@ -165,7 +165,7 @@
 
             .div__izq1 {
                 width: 90%;
-                height: 100vh;
+                height: auto;
 
                 h3 {
                     font-size: 20px;
@@ -191,7 +191,7 @@
         .seccion__nuestrahistoria {
             flex-direction: column;
             height: 220vh;
-            margin-top: 5vh;
+            margin-top: 8vh;
 
             .div__izq2 {
                 display: flex;
@@ -201,7 +201,8 @@
                 padding-top: 40px;
 
                 .qs__imagen {
-                    width: 90%;
+                    width: auto;
+                    height: 80vh;
                 }
             }
 
@@ -223,7 +224,7 @@
     /*formulario*/
 
     .main__formulario {
-        height: 160vh;
+        height: auto;
 
         .formulario {
 
