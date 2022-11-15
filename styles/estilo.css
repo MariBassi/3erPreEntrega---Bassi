@@ -354,7 +354,7 @@ header .menu .lista .active a {
   height: 90vh;
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  padding-bottom: 5vh;
 }
 .main__quienessomos .seccion__quienessomos .div__izq1 {
   flex: 1;
