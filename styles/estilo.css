@@ -308,7 +308,7 @@ header .menu .lista .active a {
 }
 .seccion__servicios .primeros .servicio, .seccion__servicios .segundos .servicio {
   width: 25vw;
-  height: 90%;
+  height: 80vh;
   background-color: #bf6b16;
   border-radius: 10px;
   overflow: hidden;
@@ -321,15 +321,23 @@ header .menu .lista .active a {
 }
 .seccion__servicios .primeros .servicio img, .seccion__servicios .segundos .servicio img {
   width: 100%;
+  height: 50vh;
 }
 .seccion__servicios .primeros .servicio .info, .seccion__servicios .segundos .servicio .info {
-  padding: 10px 20px 20px 20px;
-  line-height: 0.95cm;
+  width: 100%;
+  height: 30vh;
+  padding: 2%;
   color: #000000;
+  padding-inline: 20px;
 }
 .seccion__servicios .primeros .servicio .info h4, .seccion__servicios .segundos .servicio .info h4 {
   color: #ffffff;
   text-transform: uppercase;
+}
+.seccion__servicios .primeros .servicio .info p, .seccion__servicios .segundos .servicio .info p {
+  font-size: 1rem;
+  line-height: 4vh;
+  padding-block: 2vh;
 }
 .seccion__servicios .primeros .servicio .info a, .seccion__servicios .segundos .servicio .info a {
   color: #000000;
