@@ -308,7 +308,7 @@ header .menu .lista .active a {
 }
 .seccion__servicios .primeros .servicio, .seccion__servicios .segundos .servicio {
   width: 25vw;
-  height: 90vh;
+  height: 90%;
   background-color: #bf6b16;
   border-radius: 10px;
   overflow: hidden;
