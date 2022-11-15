@@ -707,8 +707,7 @@ footer .redes a {
   }
   .main__quienessomos .seccion__nuestrahistoria {
     flex-direction: column;
-    height: 220vh;
-    margin-top: 8vh;
+    height: auto;
   }
   .main__quienessomos .seccion__nuestrahistoria .div__izq2 {
     display: flex;
