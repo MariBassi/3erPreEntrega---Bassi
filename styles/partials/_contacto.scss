@@ -15,7 +15,7 @@
 
         .form__contacto {
             display: grid;
-            color: #bf6b16;
+            color: $mainColor;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr 1fr 1fr;
             grid-template-areas:
@@ -53,7 +53,7 @@
                 padding: 1rem 1.5rem;
 
                 &::placeholder {
-                    color: #bf6b16;
+                    color: $mainColor;
                 }
             }
 
@@ -61,12 +61,12 @@
             .reset {
                 border-radius: 10px;
                 padding: 10px;
-                background-color: #ba7d40;
+                background-color: $secondaryColor;
                 border: 0;
                 width: 160px;
 
                 &:hover {
-                    background-color: #bf6b16;
+                    background-color: $mainColor;
                 }
             }
         }
