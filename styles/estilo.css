@@ -354,7 +354,6 @@ header .menu .lista .active a {
   height: 90vh;
   display: flex;
   justify-content: center;
-  padding-top: 40px;
   padding-bottom: 50px;
 }
 .main__quienessomos .seccion__quienessomos .div__izq1 {
@@ -684,7 +683,7 @@ footer .redes a {
   }
   .main__quienessomos .seccion__quienessomos {
     flex-direction: column;
-    height: 160vh;
+    height: auto;
     padding-bottom: 50px;
   }
   .main__quienessomos .seccion__quienessomos .div__izq1 {
