@@ -17,13 +17,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 90vw;
-        height: 90vh;
+        width: 90%;
+        min-height: 90%;
         background-color: #ffffff;  
         box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.711);
 
         .historia__izquierdo {
-            font-size: 20px;
+            font-size: 1.2rem;
             flex: 1;
             padding-inline: 3vw;
 

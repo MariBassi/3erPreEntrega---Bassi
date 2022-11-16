@@ -1,6 +1,4 @@
 .servicios {
-    height: 80px;
-
     h2 {
         @extend %tituloSeparador;
     }
@@ -10,21 +8,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    margin-top: 1.8rem;
     width: 100%;
     flex-direction: column;
 
-    .primeros, .segundos {
+    .primeros,
+    .segundos {
         display: flex;
         width: 100%;
-        height: 100vh;
+        padding-block: 2rem;
         justify-content: space-evenly;
-        
+
         .servicio {
-            width: 25vw;
-            height: 80vh;
+            width: 25%;
             background-color: $mainColor;
             border-radius: 10px;
+            padding-bottom: 1rem;
             overflow: hidden;
             box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
             transition: all 1s;
@@ -36,20 +35,18 @@
 
             img {
                 width: 100%;
-                height: 50vh;   
-            }  
+            }
 
             .info {
                 width: 100%;
-                height: 30vh;
                 padding: 2%;
                 color: #000000;
-                padding-inline: 20px;  
+                padding-inline: 20px;
 
                 h4 {
                     color: #ffffff;
                     text-transform: uppercase;
-                }              
+                }
 
                 p {
                     font-size: 1rem;
