@@ -17,21 +17,21 @@
         -webkit-animation: appear;
         animation: appear;
         animation-duration: 2s;
-        animation-direction:normal;
+        animation-direction: normal;
         animation-iteration-count: 1;
     }
 
-    p { 
+    p {
         color: $mainColor;
         text-align: center;
-        font-size: 1.2rem;  
+        font-size: 1.2rem;
         font-weight: 600;
         padding-inline: 20%;
         padding-top: 2rem;
         -webkit-animation: appear;
         animation: appear;
         animation-duration: 4s;
-        animation-direction:normal;
+        animation-direction: normal;
         animation-iteration-count: 1;
     }
 }

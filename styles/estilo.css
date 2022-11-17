@@ -129,29 +129,38 @@ header .menu .lista .active a {
   display: flex;
   width: 100%;
   height: 100vh;
-  padding-block: 30px;
+  padding-block: 2rem;
 }
-.eventos .end {
+.eventos .primero,
+.eventos .segundo {
+  display: flex;
+}
+.eventos .primero .end,
+.eventos .segundo .end {
   justify-content: flex-end;
 }
-.eventos .evento {
+.eventos .primero .evento,
+.eventos .segundo .evento {
   display: flex;
-  height: 100%;
+  flex: 1;
   align-items: center;
   flex-direction: column;
 }
-.eventos .evento img {
+.eventos .primero .evento img,
+.eventos .segundo .evento img {
   max-height: 50vh;
   border-radius: 10px;
 }
-.eventos .evento p {
+.eventos .primero .evento p,
+.eventos .segundo .evento p {
   text-align: center;
   padding-top: 1.2rem;
   padding-inline: 3rem;
   line-height: 1.5rem;
   padding-bottom: 5px;
 }
-.eventos .evento a {
+.eventos .primero .evento a,
+.eventos .segundo .evento a {
   border-radius: 5px;
   border: none;
   color: #000000;
@@ -160,7 +169,8 @@ header .menu .lista .active a {
   padding: 0.8rem;
   margin-top: 0.5rem;
 }
-.eventos .evento a:hover {
+.eventos .primero .evento a:hover,
+.eventos .segundo .evento a:hover {
   background-color: #bf6b16;
 }
 
@@ -423,7 +433,6 @@ header .menu .lista .active a {
   display: flex;
 }
 .main__formulario .formulario {
-  width: 50%;
   flex: 1;
   margin-block: 35px;
   margin-inline: 30px;
@@ -480,7 +489,6 @@ header .menu .lista .active a {
   background-color: #bf6b16;
 }
 .main__formulario .datos__paraje {
-  width: 50%;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -556,6 +564,28 @@ footer .redes a {
   }
 }
 @media screen and (max-width: 1250px) {
+  /*index*/
+  .eventos {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 10rem;
+    gap: 3rem;
+  }
+  .eventos .primero,
+.eventos .segundo {
+    display: flex;
+    flex-direction: row;
+  }
+  .eventos .primero .evento,
+.eventos .segundo .evento {
+    padding-inline: none;
+  }
+  .eventos .primero .evento p,
+.eventos .segundo .evento p {
+    padding-inline: 5rem;
+  }
   /*nuestros-platos*/
   .main__menu {
     background-image: none;
@@ -575,7 +605,7 @@ footer .redes a {
     width: 100vw;
   }
   .main__menu .contenedor .separador h4 {
-    font-size: 4vw;
+    font-size: 2.4rem;
   }
   .main__menu .contenedor .menuparaje {
     width: 100%;
@@ -652,16 +682,6 @@ footer .redes a {
     line-height: 2.3rem;
   }
 }
-@media screen and (max-width: 1250px) and (max-width: 700px) {
-  /*servicios*/
-  .seccion__servicios {
-    flex-direction: column;
-  }
-  .seccion__servicios .primeros .servicio,
-.seccion__servicios .segundos .servicio {
-    width: 70%;
-  }
-}
 @media screen and (max-width: 1250px) and (max-width: 900px) {
   /*index*/
   .btn__label {
@@ -673,67 +693,98 @@ footer .redes a {
   header #btn__menu:not(:checked) ~ .menu {
     display: none;
   }
-  /*formulario*/
-  .main__formulario {
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 1250px) and (max-width: 480px) {
-  /*index*/
-  .menu {
+  header .menu {
     background-color: #ba7d40;
     position: absolute;
     right: 0;
     top: 70px;
-    width: 50vw;
+    width: 15rem;
     margin-right: -70%;
-    transition: all 0.75s;
+    transition: all 1s;
     justify-content: center;
     z-index: 1;
   }
-  .menu .lista {
+  header .menu .lista {
     flex-direction: column;
   }
-  .menu .lista .menu_item a {
+  header .menu .lista .menu_item a {
     color: #ffffff;
   }
-}
-@media screen and (max-width: 1250px) {
-  main {
-    flex-direction: column;
+  .eventos .primero .evento,
+.eventos .segundo .evento {
+    padding-inline: 5rem;
   }
-  main .principal {
-    height: 60vh;
+  .eventos .primero .evento p,
+.eventos .segundo .evento p {
+    padding-inline: 0;
   }
-}
-@media screen and (max-width: 1250px) {
-  .eventos {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+  .seccion__historia {
+    height: auto;
+    margin-top: 2rem;
   }
-  .eventos .evento {
-    padding-bottom: 30px;
-  }
-  .eventos .evento p {
-    padding-inline: 60px;
-  }
-}
-@media screen and (max-width: 1250px) {
   .seccion__historia .historia {
+    flex-direction: column;
+    gap: 2rem;
+    padding-block: 1.5rem;
+  }
+  /*formulario*/
+  .main__formulario {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1250px) and (max-width: 700px) {
+  /*index*/
+  .eventos {
+    flex-direction: column;
+    gap: 0;
+  }
+  .eventos .primero,
+.eventos .segundo {
+    flex-direction: column;
+  }
+  .eventos .primero .evento,
+.eventos .segundo .evento {
+    padding-block: 2rem;
+  }
+  .eventos .seccion__historia .historia {
     flex-direction: column;
     padding-top: 15px;
   }
-  .seccion__historia .historia .historia__izquierdo {
+  .eventos .seccion__historia .historia .historia__izquierdo {
     max-width: 80vw;
   }
-  .seccion__historia .historia .historia__izquierdo h4,
-.seccion__historia .historia .historia__izquierdo p {
-    font-size: 15px;
+  .eventos .seccion__historia .historia .historia__izquierdo h4,
+.eventos .seccion__historia .historia .historia__izquierdo p {
+    font-size: 1rem;
     line-height: 30px;
     padding-top: 10px;
   }
-  .seccion__historia .historia .historia__derecho img {
-    width: 100%;
+  /*servicios*/
+  .seccion__servicios {
+    flex-direction: column;
+  }
+  .seccion__servicios .primeros .servicio,
+.seccion__servicios .segundos .servicio {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 480px) {
+  /*index*/
+  .principal {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Imagenes/background3.jpg);
+  }
+  .principal h2 {
+    font-size: 1.5rem;
+  }
+  .principal p {
+    font-size: 1.2rem;
+    color: #ffffff;
+  }
+  /*formulario*/
+  .main__formulario .formulario .form__contacto {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "namesurname" "email" "teléfono" "motivo" "mensaje" "mensaje";
   }
 }/*# sourceMappingURL=estilo.css.map */
