@@ -431,6 +431,7 @@ header .menu .lista .active a {
 
 .main__formulario {
   display: flex;
+  min-height: 100vh;
 }
 .main__formulario .formulario {
   flex: 1;
