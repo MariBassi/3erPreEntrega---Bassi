@@ -25,8 +25,8 @@
 
 .btn__label {
   display: none;
-  width: 30px;
-  height: 30px;
+  width: 2rem;
+  height: 2rem;
   float: right;
   margin: 1.5rem;
 }
@@ -194,7 +194,7 @@ header .menu .lista .active a {
 .seccion__historia .historia .historia__izquierdo {
   font-size: 1.2rem;
   flex: 1;
-  padding-inline: 3vw;
+  padding-inline: 4rem;
 }
 .seccion__historia .historia .historia__izquierdo h4 {
   color: #bf6b16;
@@ -345,8 +345,8 @@ header .menu .lista .active a {
 .seccion__servicios .primeros .servicio .info p,
 .seccion__servicios .segundos .servicio .info p {
   font-size: 1rem;
-  line-height: 4vh;
-  padding-block: 2vh;
+  line-height: 1.5rem;
+  padding-block: 1rem;
 }
 .seccion__servicios .primeros .servicio .info a,
 .seccion__servicios .segundos .servicio .info a {
@@ -402,7 +402,7 @@ header .menu .lista .active a {
 .main__quienessomos .seccion__nuestrahistoria {
   width: 100%;
   display: flex;
-  margin-bottom: 5vh;
+  margin-bottom: 5rem;
 }
 .main__quienessomos .seccion__nuestrahistoria .div__izq2 {
   flex: 1;
@@ -432,11 +432,13 @@ header .menu .lista .active a {
 .main__formulario {
   display: flex;
   min-height: 100vh;
+  padding-top: 3rem;
+  padding-inline: 3rem;
 }
 .main__formulario .formulario {
   flex: 1;
-  margin-block: 35px;
-  margin-inline: 30px;
+  margin-block: 2.3rem;
+  margin-inline: 2rem;
 }
 .main__formulario .formulario .form__contacto {
   display: grid;
@@ -490,14 +492,14 @@ header .menu .lista .active a {
   background-color: #bf6b16;
 }
 .main__formulario .datos__paraje {
-  padding: 30px;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   flex: 1;
 }
 .main__formulario .datos__paraje h3,
 .main__formulario .datos__paraje h4 {
-  margin-bottom: 20px;
+  margin-bottom: 1.2rem;
 }
 .main__formulario .datos__paraje h3 {
   color: #ba7d40;
@@ -571,7 +573,6 @@ footer .redes a {
     height: auto;
     flex-direction: column;
     align-items: center;
-    padding-inline: 10rem;
     gap: 3rem;
   }
   .eventos .primero,
@@ -585,7 +586,7 @@ footer .redes a {
   }
   .eventos .primero .evento p,
 .eventos .segundo .evento p {
-    padding-inline: 5rem;
+    padding-inline: 15%;
   }
   /*nuestros-platos*/
   .main__menu {
@@ -601,9 +602,8 @@ footer .redes a {
     font-size: 10rem;
   }
   .main__menu .contenedor .separador {
-    padding: 2%;
-    height: 5vh;
-    width: 100vw;
+    padding: 2rem;
+    width: 100%;
   }
   .main__menu .contenedor .separador h4 {
     font-size: 2.4rem;
@@ -683,7 +683,7 @@ footer .redes a {
     line-height: 2.3rem;
   }
 }
-@media screen and (max-width: 1250px) and (max-width: 900px) {
+@media screen and (max-width: 900px) {
   /*index*/
   .btn__label {
     display: block;
@@ -711,14 +711,6 @@ footer .redes a {
   header .menu .lista .menu_item a {
     color: #ffffff;
   }
-  .eventos .primero .evento,
-.eventos .segundo .evento {
-    padding-inline: 5rem;
-  }
-  .eventos .primero .evento p,
-.eventos .segundo .evento p {
-    padding-inline: 0;
-  }
   .seccion__historia {
     height: auto;
     margin-top: 2rem;
@@ -732,9 +724,10 @@ footer .redes a {
   .main__formulario {
     flex-direction: column;
     align-items: center;
+    padding-top: 1rem;
   }
 }
-@media screen and (max-width: 1250px) and (max-width: 700px) {
+@media screen and (max-width: 700px) {
   /*index*/
   .eventos {
     flex-direction: column;
@@ -748,15 +741,19 @@ footer .redes a {
 .eventos .segundo .evento {
     padding-block: 2rem;
   }
-  .eventos .seccion__historia .historia {
+  .eventos .primero .evento p,
+.eventos .segundo .evento p {
+    padding-inline: 30%;
+  }
+  .seccion__historia .historia {
     flex-direction: column;
     padding-top: 15px;
   }
-  .eventos .seccion__historia .historia .historia__izquierdo {
-    max-width: 80vw;
+  .seccion__historia .historia .historia__izquierdo {
+    max-width: 100%;
   }
-  .eventos .seccion__historia .historia .historia__izquierdo h4,
-.eventos .seccion__historia .historia .historia__izquierdo p {
+  .seccion__historia .historia .historia__izquierdo h4,
+.seccion__historia .historia .historia__izquierdo p {
     font-size: 1rem;
     line-height: 30px;
     padding-top: 10px;

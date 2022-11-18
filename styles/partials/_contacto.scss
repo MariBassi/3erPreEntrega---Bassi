@@ -5,11 +5,14 @@
 .main__formulario {
     display: flex;
     min-height: 100vh;
+    padding-top: 3rem;
+    padding-inline: 3rem;
+
 
     .formulario {
         flex: 1;
-        margin-block: 35px;
-        margin-inline: 30px;
+        margin-block: 2.3rem;
+        margin-inline: 2rem;
 
         .form__contacto {
             display: grid;
@@ -71,14 +74,14 @@
     }
 
     .datos__paraje {
-        padding: 30px;
+        padding: 2rem;
         display: flex;
         flex-direction: column;
         flex: 1;
 
         h3,
         h4 {
-            margin-bottom: 20px;
+            margin-bottom: 1.2rem;
         }
 
         h3 {
